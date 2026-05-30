@@ -38,5 +38,7 @@ public class PostController {
     public ResponseEntity<Post>updatePostById(@PathVariable long id,@RequestBody Post post){
       Post post1 = postService.updatePostById(id, post);
       return new ResponseEntity<>(post1,HttpStatus.OK);
+
+    // this is the comment
     }
 }
